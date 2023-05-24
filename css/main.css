@@ -1,0 +1,302 @@
+html,body{
+    font-family: 'Volkhov', serif;
+    /* posifont-family: 'Hind Siliguri', sans-serif;tion: relative; */
+    scroll-behavior: smooth;
+}
+
+
+header{
+    background-color: transparent;
+    padding: 0px;
+    transition: all 0.4s ease 0s;
+    height: 120px;
+    display: grid;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+header .header_content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center !important;
+    /* padding: 50px 0; */
+}
+header .header_logo a{
+    color: #FB811E;
+    text-decoration: none;
+    font-size: 30px;
+    position: relative;
+    transition: all 0.5s;
+}
+header .header_logo a:hover{
+    color: black;    
+}
+header .header_logo a i{
+    position: absolute;
+    top: -10px;
+    left: 55px;
+    font-size: 20px;
+}
+header .header_content .header_nav ul{
+    list-style: none;
+}
+header .header_content .header_nav ul li{
+    display: inline;
+    margin-right: 50px;
+}
+header .header_content .navbar ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #060606;
+    transition: all 0.5s;
+    font-weight: 500;
+}
+header .header_content .navbar ul li a:hover{
+    text-decoration: underline;
+    color: #FB811E;
+}
+header.inverted{
+    background-color: #fff;
+    box-shadow: 0 3px 5px 0.3px rgba(0, 0, 0, 0.1);
+}
+
+/* header .header_content .navbar .search{
+    margin: 0 10px 0 10px;
+} */
+        
+.search_and_theme input[type=search]
+{
+    background: white url(/img/searchicon.png) no-repeat 10px center;
+    border: solid 1px gray;
+    padding:20px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    transition: all 1s;
+    cursor: pointer;
+    border-radius: 35px;
+    text-align: center;
+}
+.search_and_theme{
+    display: flex;
+    justify-content: space-between;
+}
+.search_and_theme input[type=search]:focus{
+    width: 200px;
+}
+#switchButton {
+  background-color: transparent;
+  border: none;
+}
+#switchButton .fa-sun {
+  display: none;
+  color: #FB811E;
+  font-size: 25px;
+}
+#switchButton .fa-moon {
+  display: block;
+  color: #FB811E;
+  font-size: 25px;
+}
+.dark#myBody {
+  background-color: #353439;
+  color: white !important;
+}
+.dark#site-header{
+    background-color: transparent
+}
+.dark#logo{
+    color: #060606 !important;
+}
+.dark #switchButton {
+  background-color: transparent;
+}
+.dark #switchButton .fa-sun {
+  display: block;
+}
+.dark #switchButton .fa-moon {
+  display: none;
+}
+
+/* carousel */
+.carousel{
+    /* position: relative; */
+    /* padding-bottom: 100px; */
+    height: 100vh;
+}
+.carousel-inner{
+    height: 100vh;
+}
+.carousel-indicators [data-bs-target]{
+    width:15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.carousel-indicators [data-bs-target]:focus{
+    background-color: #FB811E;
+}
+.carousel .carousel-inner .carousel-item{
+    position: relative;
+    height: 100%;
+}
+
+.carousel_content{
+    display: flex;
+}
+.carousel_left{
+    position: absolute;
+    left: 9.5rem;
+    z-index: 1;
+    width: 40%;
+    padding-top: 100px;
+}
+
+.carousel_content .carousel_title h3{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 60px;
+}
+.carousel_title p{
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    color: #707070;
+}
+.carousel_text{
+    opacity: 0.1;
+    line-height:28px;
+    padding-top: 100px;
+    font-size: 120px;
+    margin-left: -0.5em;
+    font-weight: bold;
+}
+.carousel_title .btn{
+    color: white;
+    background-color: #FB811E;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+}
+.carousel_title .btn:hover{
+    background-color: #198754;
+    color: white;
+}
+.carousel_right{
+   position: absolute;
+   right: 0;
+   width: 60%;
+}
+.carousel-inner{
+    height: 100vh;
+    border-bottom-left-radius: 30px;
+}
+.carousel-item{
+    position: relative;
+}
+.carousel-item img{
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-bottom-left-radius: 20px;
+}
+
+.carousel .carousel-inner .carousel-item .carousel_overlay{
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    color: white;
+}
+/* discover */
+.discover{
+    padding: 70px 0;
+    
+}
+.discover_content{
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+.discover_left{
+    width: 50%;
+    padding-top: 80px;
+    margin-left: 2.5rem;
+}
+.discover_content .discover_title h3{
+    color: #FB811E;
+    font-size: 28px;
+}
+.discover_content .discover_title h2{
+    font-size: 50px;
+    color: #060606;
+    font-weight: bold;
+}
+.discover_left .discover_title p{
+    font-size: 17px;
+    color: #707070;
+    line-height: 30px;
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-weight: 400;
+}
+.discover_left .btn{
+    color: white;
+    background-color: #FB811E;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+}
+.discover_left .btn:hover{
+    background-color: #198754;
+    color: white;
+}
+.discover_right{
+    width: 50%;
+}
+.discover .discover_right .right_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    text-align: center;
+    
+}
+
+
+.discover .discover_right .right_content .discover_item{
+    padding: 40px 30px;
+    border-radius: 30px;
+    box-shadow: 0 25px 98px 0 rgb(0 0 0 / 3%);
+    transition: all 0.5s;
+}
+.discover .discover_right .right_content .discover_item:hover{
+    box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
+}
+
+.discover .discover_right .right_content .discover_item img{
+    max-width: 65px ;
+    display: block;
+    margin: 0 auto;
+}
+
+.discover .discover_right .right_content .discover_item a{
+    text-decoration: none;
+    color: #060606;
+    transition: all 0.5s;
+}
+.discover .discover_right .right_content .discover_item a:hover{
+    text-decoration: none;
+    color: #198754;
+}
+.discover .discover_right .right_content .discover_item a h4{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-top: 25px;
+    display: block;
+}
+/* services */
+.services{
+    background-color: #198754;
+}
